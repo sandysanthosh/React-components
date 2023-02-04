@@ -95,3 +95,57 @@ render()- life cycle method
 {} - include javascript here
 
 jsx: class name
+
+
+#### React CRUD
+
+```
+
+import React, { useState } from "react";
+
+const App = () => {
+  const [todos, setTodos] = useState([
+    { id: 1, task: "Buy groceries" },
+    { id: 2, task: "Do laundry" },
+  ]);
+
+  const addTodo = (task) => {
+    setTodos([...todos, { id: todos.length + 1, task }]);
+  };
+
+  const removeTodo = (id) => {
+    setTodos(todos.filter((todo) => todo.id !== id));
+  };
+
+  const updateTodo = (id, updatedTask) => {
+    setTodos(
+      todos.map((todo) =>
+        todo.id === id ? { ...todo, task: updatedTask } : todo
+      )
+    );
+  };
+
+  return (
+    <div>
+      <h1>Todo List</h1>
+      <ul>
+        {todos.map((todo) => (
+          <li key={todo.id}>
+            {todo.task}
+            <button onClick={() => removeTodo(todo.id)}>Remove</button>
+            <button onClick={() => updateTodo(todo.id, "Updated task")}>
+              Update
+            </button>
+          </li>
+        ))}
+      </ul>
+      <button onClick={() => addTodo("New task")}>Add Todo</button>
+    </div>
+  );
+};
+
+export default App;
+
+
+```
+
