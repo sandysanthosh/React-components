@@ -1,3 +1,39 @@
+<!-- portfolio-docs-v1 -->
+# React Components
+
+> A learning project exploring React components and front-end composition.
+
+## Repository Context
+
+| Item | Details |
+|---|---|
+| Project type | Learning project |
+| Technologies | React, JavaScript, HTML, CSS |
+| Primary focus | Reusable UI components and client-side development |
+| Status | Historical learning project. |
+
+## What This Repository Demonstrates
+
+- Practical, hands-on exploration of **reusable ui components and client-side development**
+- Ability to organise examples and technical material for later reuse
+- Breadth across web, backend, API, and software-engineering concepts
+
+## Getting Started
+
+Install dependencies with `npm install`, then run `npm start` when a package manifest is present.
+
+### Key contents
+
+`package-lock.json`, `package.json`, `public`, `src`
+
+## Portfolio Note
+
+This repository is part of my earlier learning and experimentation archive. My current professional focus is **Java, Spring Boot, microservices, REST APIs, Kafka, cloud-native engineering, and banking technology**. See my [GitHub profile](https://github.com/sandysanthosh) for current positioning and featured work.
+
+---
+
+## Original Documentation
+
 # React Crash Course (TodoList)
 
 This is the code for the crash course on YouTube
